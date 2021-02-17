@@ -1197,3 +1197,8 @@ footer {
         padding-left: 0px;
     }
 }
+.container {
+    width: 100%;
+    height: auto;
+    background: red;
+}

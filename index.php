@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     
@@ -406,36 +407,36 @@
 
 
 <!-- Section Contact -->
-
+<?php
+include('MailContact/mail.php')
+?>
 <section class="section-contact" id="contact">
 
     <h2><strong>Rentrons</strong> en Contact</h2>
 
     <div class="container-form">
 
-        <form class="form-bloc">
+        <form  method="post" action="" class="form-bloc">
 
             <div class="form-groupe">
                 <label for="prenom">Prénom</label>
-                <input type="text" required maxlength="16" id="prenom">
+                <input type="text" required maxlength="16" id="prenom" name="prenom" value="<?= (empty($_POST['prenom'])) ? '' : $_POST['prenom']; ?>">
             </div>
             <div class="form-groupe">
                 <label for="nom">Nom</label>
-                <input type="text" required maxlength="16" id="nom">
+                <input type="text" required maxlength="16" id="nom" name="nom" value="<?= (empty($_POST['nom'])) ? '' : $_POST['nom']; ?>">
             </div>
             <div class="form-groupe">
-                <textarea id="txt" placeholder="Votre message" required></textarea>
+                <textarea id="txt" placeholder="Votre message" name="message" value="<?= (empty($_POST['message'])) ? '' : $_POST['message']; ?>" required></textarea>
             </div>
 
             <div class="form-groupe">
-                <input type="submit" value="ENVOYER" class="button-sub">
+                <input type="submit" value="ENVOYER" class="button-sub" name="valider">
             </div>
 
         </form>
 
     </div>
-
-
 </section>
 
 <footer>
