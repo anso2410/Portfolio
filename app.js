@@ -90,6 +90,7 @@ for(let i = 0; i < input_fields.length; i++) {
 
 }
 
+
 // Anim GSAP + ScrollMagic
 
 const navbar = document.querySelector('.nav-gauche');
