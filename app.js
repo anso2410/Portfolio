@@ -53,7 +53,7 @@ window.onload = function () {
  typewriter
  .pauseFor(1800)
  .changeDelay(25)
- .typeString("Moi c'est<strong> Anne - Sophie Simana</strong> !")
+ .typeString("Moi c'est <strong> Anne - Sophie Simana</strong> !")
  .pauseFor(500)
  .typeString('<span style = "color:var(--color-jsDevJunior) ;"><strong> Développeur web Junior </strong></span> ')
  .pauseFor(1200)
@@ -104,7 +104,7 @@ const TL1 = gsap.timeline({paused: true});
 TL1 
 .to(navbar, {left: '0px', ease: Power3.easeOut, duration: 0.6})
 .from(titre, {y: -50, opacity: 0, ease: Power3.easeOut, duration: 0.4})
-.staggerFrom(btn, 1, {opacity: 0}, 0.2, '-=0.30')
+.staggerFrom(btn, 1, {opacity: 0}, 0.5, '-=0.50')
 .staggerFrom(btnMedias, 1, {opacity: 0}, 0.2, '-=0.75')
 .from(btnRondAccueil, {y: -50, opacity:0, ease: Power3.easeOut, duration: 0.4}, '-=1')
 
@@ -122,7 +122,7 @@ const listePres = document.querySelectorAll('.item-liste')
 const tlpres = new TimelineMax();
 
 tlpres
-.from(titrePres, {y: -200, opacity: 0, duration:1})
+.from(titrePres, {y: -200, opacity: 0, duration:0.6})
 .from(presGauche, {y:-20, opacity: 0, duration: 0.6}, '-=0.5')
 .staggerFrom(listePres, 1, {opacity: 0}, 0.2, '-=0.5')
 
