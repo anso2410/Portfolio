@@ -1091,8 +1091,8 @@ a i {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px dashed #333;
-    border-bottom: 1px dashed #333;
+    /* border-top: 1px dashed #333;
+    border-bottom: 1px dashed #333; */
 }
 .txt-par {
     font-size: 30px;
