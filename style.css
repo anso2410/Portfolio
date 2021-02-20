@@ -1248,14 +1248,14 @@ textarea:focus {
 }
 .oups {
     display: inline;
-    width: 50px;
-    height: 50px; 
+    width: 60px;
+    height: 60px; 
     border: 2px solid rgb(144,144,144);
-    
+    text-align: center;
     color: #aaa;
     background: black;
     border-radius: 100%;
-    padding: 5px;
+    
     background-image: linear-gradient(to right, transparent 50%, rgb(65,65,65) 50%, rgb(134,134,134));
     background-size: 200%;
     font-size: 15px 20px;
