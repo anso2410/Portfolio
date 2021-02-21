@@ -1255,7 +1255,6 @@ textarea:focus {
     color: #aaa;
     background: black;
     border-radius: 100%;
-    
     background-image: linear-gradient(to right, transparent 50%, rgb(65,65,65) 50%, rgb(134,134,134));
     background-size: 200%;
     font-size: 15px 20px;
