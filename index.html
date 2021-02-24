@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> | Mon Portfolio | Anne-Sophie Simana </title>
     <link rel="stylesheet" href="style.css">
@@ -190,7 +191,7 @@
                 <img src="ressources/img/boutique-en-ligne.jpeg" alt=" projet de boutique en ligne">
             </div>
             <h3>La Boutique d'ANSO</h3>
-            <p>Boutique en ligne avec symfony 5, composer, EasyAdmin Bundler & Bootstrap 4  </p>
+            <p>Boutique en ligne avec symfony 5, composer, EasyAdmin Bundler, Bootstrap 4, Stripe et Mailjet  </p>
             <a href="https://symfony.shop.as4coding.be" class="btn-projets" target="blank" rel="noopener" >Découvrez le projet</a>
         </div>
         <div class="item vague1">
@@ -283,13 +284,13 @@
             <div class="barre-grises"></div>
         </div>
         <div class="range-cont">
-            <p class="label-skill">PHP/Symfony</p>
-            <p class="number-skill">30%</p>
+            <p class="label-skill">PHP/Symfony/MySQL</p>
+            <p class="number-skill">35%</p>
             <div class="barre-skill b2"></div>
             <div class="barre-grises"></div>
         </div>
         <div class="range-cont">
-            <p class="label-skill">UI / UX</p>
+            <p class="label-skill">UI / UX (bootstrap/Sass)</p>
             <p class="number-skill">35%</p>
             <div class="barre-skill b3"></div>
             <div class="barre-grises"></div>
@@ -303,7 +304,7 @@
             <div class="barre-grises"></div>
         </div>
         <div class="range-cont">
-            <p class="label-skill">Wordpress</p>
+            <p class="label-skill">Wordpress(ACF-creation de thème)</p>
             <p class="number-skill">30%</p>
             <div class="barre-skill b5"></div>
             <div class="barre-grises"></div>
@@ -418,21 +419,21 @@
 
             <div class="form-groupe">
                 <label for="prenom">Prénom</label>
-                <input id="txt" name="prenom" type="text" required maxlength="16"/> 
+                <input  name="prenom" type="text" required maxlength="16"/> 
             </div>
             <div class="form-groupe">
                 <label for="nom">Nom</label>
-                <input id="txt"  name ="nom" type="text" required maxlength="16"/> 
+                <input   name ="nom" type="text" required maxlength="16"/> 
             </div>
             <div class="form-groupe">
-                <textarea id="txt" name="message"  placeholder="Votre message" required ></textarea>
+                <textarea id="text" name="message" placeholder="Votre message" required ></textarea>
             </div>
 
             <div class="form-groupe">
                 <input type="submit" value="ENVOYER" class="button-sub" name="valider" />
                 
             </div>
-            <!-- <input type="reset" value="Oupss!" onclick='document.location.reload(false)' class="oups" title="Recommencez le formulaire"> -->
+            
         </form>
         
     </div>
