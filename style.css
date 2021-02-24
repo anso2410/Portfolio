@@ -1,5 +1,5 @@
 :root {
-    --color-acceuil:#519db4;
+    --color-accueil:#519db4;
     --color-portfolio:#EA39ff;
     --color-pres:rgb(99, 99, 243);
     --color-competence:#ff6910;
@@ -76,7 +76,7 @@ video {
 }
 
 .blocs-menu .txt1 {
-    color: var(--color-acceuil);
+    color: var(--color-accueil);
  }
  .blocs-menu .txt2 {
     color: var(--color-pres);
@@ -538,7 +538,7 @@ a i {
     text-align: center;
     margin: 50px 0 70px 0;
     padding-left: 300px;
-    color: var(--color-acceuil);
+    color: var(--color-accueil);
 }
 
 .container-presentation {
@@ -589,7 +589,7 @@ a i {
     font-size: 40px;
 }
 .n1 {
-    color: var(--color-acceuil);
+    color: var(--color-accueil);
 }
 .n2 {
     color: var(--color-portfolio);

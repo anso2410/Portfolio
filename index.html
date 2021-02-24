@@ -2,13 +2,12 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> | Mon Portfolio | Anne-Sophie Simana </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="ressources/favicon_as4coding/AS4coding2.png" />  
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" type="text/css">
 
 </head>
 <body>
@@ -82,7 +81,7 @@
     <!-- Section Accueil -->
 
     <section class="accueil" id="accueil">
-        <video src="./ressources/mp4/Motion Graphics - 31918.mp4" autoplay muted loop></video>
+        <video src="./ressources/mp4/Motion-Graphics-31918.mp4" autoplay muted loop></video>
         <h1>Bienvenue sur mon portfolio</h1>
         <p class="txt-animation"></p>
         <a href="#port" class="btn-acc btn-acc1">Portfolio</a>
@@ -119,7 +118,7 @@
 <!-- Section Présentation -->
 
 <section class="presentation" id="pres">
-    <video src="./ressources/mp4/Motion Graphics - 31918.mp4" autoplay muted loop></video>
+    <video src="./ressources/mp4/Motion-Graphics-31918.mp4" autoplay muted loop></video>
     
     <h2 class="titre-pres">A propos de moi.</h2>
 
@@ -183,7 +182,7 @@
             </div>
             <h3> Mon PORTFOLIO animé</h3>
             <p>Portolio animé avec GSAP, ScrollMagic, Javascript & CSS 3</p>
-            <a href="https://anso2410.github.io/Portfolio/" class="btn-projets"target="blank" rel="noopener" >Découvrez ce projet</a>
+            <a href="https://anso2410.github.io/Portfolio/" class="btn-projets" target="blank" rel="noopener" >Découvrez ce projet</a>
         </div>
       
         <div class="item vague1">
@@ -209,7 +208,7 @@
             </div>
             <h3>JEPSEN- Brite</h3>
             <p>Site web événementiel en php et MySQL façon Event-Brite (projet en équipe)</p>
-            <a href="https://still-island-51569.herokuapp.com/index.php" class="btn-projets"target="blank" rel="noopener" >Découvrez ce projet</a>
+            <a href="https://still-island-51569.herokuapp.com/index.php" class="btn-projets" target="blank" rel="noopener" >Découvrez ce projet</a>
         </div>
 
 
@@ -219,7 +218,7 @@
             </div>
             <h3>GreenSock & Menu circulaires</h3>
             <p>Portfolio animé avec la librairie GreenSock et menu circulaire</p>
-            <a href="https://anso2410.github.io/GreenSock-portfolio/" class="btn-projets"target="blank" rel="noopener" >Découvrez le projet</a>
+            <a href="https://anso2410.github.io/GreenSock-portfolio/" class="btn-projets" target="blank" rel="noopener">Découvrez le projet</a>
         </div>
         <div class="item vague2">
             <div class="cont-img-port">
@@ -227,7 +226,7 @@
             </div>
             <h3> 404 page not found</h3>
             <p>Page d'erreur 404 avec animation css et keyframes , début de formation</p>
-            <a href="https://anso2410.github.io/page-404-not-found/" class="btn-projets"target="blank" rel="noopener" >Découvrez le projet</a>
+            <a href="https://anso2410.github.io/page-404-not-found/" class="btn-projets" target="blank" rel="noopener" >Découvrez le projet</a>
         </div>
       >
 
@@ -310,7 +309,7 @@
             <div class="barre-grises"></div>
         </div>
         <div class="range-cont">
-            <p class="label-skill">React/Angular</p>
+            <p class="label-skill">Angular</p>
             <p class="number-skill">20%</p>
             <div class="barre-skill b6"></div>
             <div class="barre-grises"></div>
@@ -419,11 +418,11 @@
 
             <div class="form-groupe">
                 <label for="prenom">Prénom</label>
-                <input  name="prenom" type="text" required maxlength="16"/> 
+                <input id="prenom" name="prenom" type="text" required maxlength="16"/> 
             </div>
             <div class="form-groupe">
                 <label for="nom">Nom</label>
-                <input   name ="nom" type="text" required maxlength="16"/> 
+                <input id="nom" name ="nom" type="text" required maxlength="16"/> 
             </div>
             <div class="form-groupe">
                 <textarea id="text" name="message" placeholder="Votre message" required ></textarea>
@@ -449,17 +448,18 @@
 
 
 
+<script src="https://www.as4coding.be/cookiechoices.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{cookieChoices.showCookieConsentBar('Mon Portolio utilise des cookies(et oui !) pour vous offrir le meilleur service. En poursuivant votre navigation, vous acceptez l’utilisation des cookies.', 'Accepter', 'En savoir plus', 'https://www.as4coding.be/mentions-legales/');});
+</script>
 
-
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<script src="app.js"></script>
+<script src="cookiechoices.js"></script>
 </body>
 </html>
