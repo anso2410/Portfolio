@@ -407,37 +407,32 @@
 
 
 <!-- Section Contact -->
-<!-- <?php
-include('MailContact/mail.php')
-?>  -->
+  
 <section class="section-contact" id="contact">
 
     <h2><strong>Rentrons</strong> en Contact</h2>
 
     <div class="container-form">
 
-        <form  method="post" action="" class="form-bloc">
+        <form  method="post" action="MailContact/mail.php" class="form-bloc">
 
             <div class="form-groupe">
                 <label for="prenom">Prénom</label>
-                <input type="text" required maxlength="16" id="prenom">
-                 <!-- name="prenom" value="<?= (empty($_POST['prenom'])) ? '' : $_POST['prenom']; ?>"> -->
+                <input id="txt" name="prenom" type="text" required maxlength="16"/> 
             </div>
             <div class="form-groupe">
                 <label for="nom">Nom</label>
-                <input type="text" required maxlength="16" id="nom" >
-                <!-- name="nom" value="<?= (empty($_POST['nom'])) ? '' : $_POST['nom']; ?>"> -->
+                <input id="txt"  name ="nom" type="text" required maxlength="16"/> 
             </div>
             <div class="form-groupe">
-                <textarea id="txt" placeholder="Votre message" required></textarea>
-                <!-- name="message" value="<?= (empty($_POST['message'])) ? '' : $_POST['message']; ?>" -->
+                <textarea id="txt" name="message"  placeholder="Votre message" required ></textarea>
             </div>
 
             <div class="form-groupe">
-                <input type="submit" value="ENVOYER" class="button-sub" name="valider">
+                <input type="submit" value="ENVOYER" class="button-sub" name="valider" />
                 
             </div>
-            <input type="reset" value="Oupss!" onclick='document.location.reload(false)' class="oups" title="Recommencez le formulaire">
+            <!-- <input type="reset" value="Oupss!" onclick='document.location.reload(false)' class="oups" title="Recommencez le formulaire"> -->
         </form>
         
     </div>
@@ -446,8 +441,8 @@ include('MailContact/mail.php')
 
 
 <footer>
-     2021&copy;
-     <a  class="footer-txt" href="mailto:simana.annesophie@gmail.com"><strong>Contactez-moi par Email</strong>, en cliquant ici</a> 
+    As4coding 2021 | &copy;
+     
 </footer>
 
 

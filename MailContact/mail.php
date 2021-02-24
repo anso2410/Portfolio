@@ -1,36 +1,42 @@
-<!-- <?php
-// if(isset($_POST['valider'])) {
-// 	if( (empty($_POST['prenom'])) ||  (empty($_POST['nom'])) || (empty($_POST['message'])) ) {
-// 		echo '<div class="alert alert-warning" role="alert>Merci de remplir tous les champs</div>';
-// 	} else {
-// 		$nom     = $_POST['nom'];
-// 		$message = $_POST['message'];
+ <?php
+ if (get_magic_quotes_gpc()) {
+     $prenom = stripslashes(trim($_POST['prenom']));
+     $nom = stripslashes(trim($_POST['nom']));
+     $message = stripslashes(trim($_POST['message']));
+ }
+ else {
+     $prenom = trim($_POST['prenom']);
+     $nom = trim($_POST['nom']);
+     $message = trim($_POST['message']);
+ }
 
-		
-// 		$destinaire = 'symfonyStripeTest@yopmail.fr';
-// 		$sujet      = 'Message en provenance de votre site';
-// 		/*$contenu    = "Vous avez reçu un nouveau message depuis votre site internet. \n";
-// 		$contenu   .= "Nom: $nom \n";
-// 		$contenu   .= "Email: $email \n";
-// 		$contenu   .= "Message: $message \n";*/
-		
-// 		$contenu    = "
-		
-// 		Vous avez reçu un nouveau message depuis votre site internet.
+ $to = "contact@as4coding.be";
 
-// 		Nom: $nom
-		
-// 		Message: $message";
-	
-// 		/*$header = 'From: '.$email. "\r\n" .
-// 				   'Reply-To: '.$email. "\r\n" .
-// 				   'X-Mailer:PHP/' .phpVersion();*/
-// 		$header = "From: formulaire de contact";
-// 		$header = "From: <symfonyStripeTest@yopmail.fr>";
-		
-// 		mail($destinaire, $sujet, $contenu, $header);
-		
-// 		echo '<div class=" alert alert-success" role="alert">Votre message a bien été envoyé</div>';
-// 	}
-// }
-?> -->
+ $msg = "";
+ $msg .= 'Prenom : '.$prenom;
+ $msg .= 'Nom : '.$nom;
+ $msg .= 'Message : '.$message;
+
+ 
+
+
+
+
+/*Le destinataire*/
+$to="contact@as4coding.be";
+
+/*Le sujet du message qui apparaitra*/
+$sujet="Message depuis le site";
+$msg = '';
+/*Le message en lui même*/
+// $msg = 'Mail envoye depuis le site' "Portfolio";
+$msg .= 'Nom : '.$nom." "."<br>";
+$msg .= 'Prenom : '.$prenom." "."<br>";
+$msg .= 'Message : '.$message." "."<br>";
+/*Les en-têtes du mail*/
+$headers = 'From: message du site Portfolio<contact@as4coding.be>'." ";
+$headers .= " ";
+/*L'envoi du mail - Et page de redirection*/
+mail($to, $sujet, $msg, $headers);
+header('Location:https://as4coding.be');
+?> 

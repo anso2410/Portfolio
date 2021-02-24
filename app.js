@@ -222,3 +222,9 @@ const scene5 = new ScrollMagic.Scene({
 })
 .setTween(tlCompetences)
 .addTo(controller);
+
+
+// function vider()
+// {
+//     document.getElementById('txt').value = '';
+// }
