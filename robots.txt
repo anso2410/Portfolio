@@ -1,0 +1,8 @@
+User-agent:*
+Disallow:/mailContact
+Disallow:/javascript
+Disallow:/cookiechoices.js
+Disallow:/mentions-legales.html
+Allow:/index.html
+Sitemap:
+https://www.as4coding.be/Sitemap.xml
