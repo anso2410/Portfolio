@@ -520,10 +520,7 @@ a i {
     color: var(--color-txtPresDroit);
 }
 .fond-forme {
-    /* background: var(--color-bgMenu); */
-    /* background-image: linear-gradient(to right, #29323c, #485563); */
-    /* background-image: linear-gradient(to left, var(--color-bgMenu) , rgb(223, 219, 219));  */
-    /* background-image: linear-gradient(to left, var(--color-bgMenu) , rgb(223, 219, 219));  */
+   
     background: rgb(56, 55, 55);
     opacity: 0.9;
     width: 2300px;
@@ -1087,13 +1084,12 @@ a i {
 .section-parallax {
     width: 100%;
     height: 250px;
-    /* background: url(ressources/img/accueil.jpg) no-repeat right / cover fixed; */
+   
      background: url(ressources/img/Portfolio.png) no-repeat center / cover fixed; 
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border-top: 1px dashed #333;
-    border-bottom: 1px dashed #333; */
+   
 }
 .txt-par {
     font-size: 30px;
@@ -1306,15 +1302,15 @@ footer a {
     }
 }
 /* propriétés pour les liseuses (via tailwind css */
-/* .sr-only {
+ /* .sr-only {
 position: absolute;
 left: -10000px;
 top: auto;
 width: 1px;
 height: 1px;
 overflow: hidden;
-} */
-.sr-only {
+}  */
+ .sr-only {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -1324,4 +1320,4 @@ overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
-}
+} 
